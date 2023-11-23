@@ -62,7 +62,7 @@ builder.Logging.AddConsole();
 
 var app = builder.Build();
 
-app.UseCors(builder => builder.WithOrigins("http://192.168.1.5:5173").AllowAnyHeader().AllowAnyMethod().AllowCredentials());
+app.UseCors(builder => builder.WithOrigins("http://localhost:5173").AllowAnyHeader().AllowAnyMethod().AllowCredentials());
 app.UseAuthentication();
 app.UseAuthorization();
 

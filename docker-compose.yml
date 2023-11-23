@@ -18,6 +18,8 @@ services:
     build:
       context: ./web-client-jwt
       dockerfile: Dockerfile
+    #volumes:
+    #  - ./web-client-jwt:/app   # Mount the local directory into the container
     ports:
       - 5001:5173
   
